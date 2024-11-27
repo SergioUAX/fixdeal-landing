@@ -136,7 +136,8 @@ body {
     line-height: 1.43;    
     color: #008272; 
     background-color: #fff;
-    max-height: 36px;       
+    max-height: 36px;
+    min-width: 115px;       
 }
 
 .header-buttons-item-button2 {
@@ -713,6 +714,8 @@ body {
 }
 
 }
+
+/* === DESKTOP STYLES === */
 
 @media screen and (min-width: 1440px) {
 
