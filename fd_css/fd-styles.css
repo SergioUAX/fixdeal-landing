@@ -65,11 +65,11 @@ body {
 
 .container {
     overflow: visible;
-    /* min-width: 320px; */
+    min-width: 320px; 
     width: 100%;
-    max-width: 1440px;
+    max-width: 375px;
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 0 16px;
 }
 
 /* === HEADER STYLES === */
@@ -80,7 +80,9 @@ body {
 }
 
 .header-container {
-    display: flex;      
+    display: flex;            
+    align-items: center;
+    padding: 8px 16px 4px 16px;
 }
 
 .header-nav {
@@ -89,15 +91,12 @@ body {
 }
 
 .header-logo {
-   margin-right: 40px;
+   margin-right: 0;
 }
 
 .header-menu-list {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+    display: none;    
 }
-
 
 .header-menu-link {
     font-weight: 600;
@@ -114,30 +113,36 @@ body {
 
 .header-buttons {
     display: flex;
-    margin-left: auto;
+    padding: 3px 0 3px 80px;
 }
 
 .header-buttons-list {
     display: flex;
+    flex-direction: row;    
+    margin-right: 24px;
+}
 
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px 0;
+.header-buttons-item:nth-child(2) {
+    display: none;
 }
 
 .header-buttons-item-button {
     outline: none;
-    border: 1px solid #2E90FA;
+    border: 1px solid #008272;
     border-radius: 8px;
-    padding: 12px 16px;
+    padding: 8px 16px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.43;    
-    color: #2E90FA; 
-    background-color: #fff;      
+    color: #008272; 
+    background-color: #fff;
+    max-height: 36px;       
 }
+
 .header-buttons-item-button2 {
-    background-color: #B08346;
+    background-color: #008272;
+    color: #fff;
+
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -145,37 +150,43 @@ body {
 }
 
 .header-mobile-menu-button {
-    display: none;
+    display: block;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 42px;
+    height: 42px;
+}
+
+.header-mobile-menu-button-icon {
+    fill: #2f2f37;
 }
 
 /* === INTRO SECTION STYLES === */
 .intro {
     background: #fff;
-    background-image: url(../fd_img/intro-background.svg);
+    background-image: url(../fd_img/intro-background-mob.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 134px;
     background-size: auto;
-    max-width: 1440px;
+    max-width: 375px;
     margin: 0 auto;      
 }      
-    
 
 .intro >.container {
-    padding-top: 99px;
-    padding-bottom: 0px;
-    padding-left: 112px;
-    padding-right: 0px;
+    padding-top: 40px;
 }
 
 .intro-subtitle {
     font-family: Noto serif;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 110%;
-    letter-spacing: 0.02em;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
     color: #1D2939;
-    max-width: 568px;
-    margin-bottom: 30px;
+    max-width: 267px;
+    margin-bottom: 24px;
 }
 
 .intro-subtitle-span {
@@ -183,35 +194,37 @@ body {
 }
 
 .intro-content {
-    max-width: 326px;
+    max-width: 198px;
 }
 
 .intro-content-text {    
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.43;
     color: #4d4d4d;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 
 .intro-content-list {
-    width: 363px;
+    width: 267px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-bottom: 195px;
+    padding-bottom: 73px;
 }
+
 .intro-content-list-item {
     border-radius: 8px;
-    padding: 12px 20px;
-    background: #F7F8F7;    
+    padding: 8px 20px;
+    background: rgba(247, 248, 247, 0.6);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
-    color: #008272;
+    color: #008272;    
 }
+
 .intro-content-list-item::before {
-content: '';
+    content: '';
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -231,7 +244,7 @@ content: '';
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-bottom: 60px; 
+    margin-bottom: 40px; 
 }
 
 .benefits-subtitle-textblock {
@@ -240,15 +253,15 @@ content: '';
 
 .benefits-subtitle-textblock-subtitle {    
     font-weight: 500;
-    font-size: 46px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 1.27;
     color: #008272;
     margin-bottom: 5px;
 }
 
 .benefits-subtitle-textblock-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     color: #344054;
 }
@@ -259,9 +272,8 @@ content: '';
 
 .benefits-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;    
     gap: 20px;
-    row-gap: 32px;
     align-items: top;
 }
 
@@ -269,7 +281,7 @@ content: '';
     border: 1px solid #D0D5DD;
     border-radius: 16px;
     padding: 32px 24px;
-    max-width: calc((100% - 2 * 20px) / 3);    
+    max-width: 100%;
 }
 
 .benefits-list-item:nth-child(odd) {
@@ -283,21 +295,22 @@ content: '';
 }
 
 .benefits-list-item-icon {
+    width: 70px;
+    height: 70px;
     margin-bottom: 24px;
 }
 
 .benefits-list-item-textblock-subtitle {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.5;
     margin-bottom: 16px;    
 }
 
-.benefits-list-item-textblock-text {
-    
+.benefits-list-item-textblock-text {    
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.6;        
+    line-height: 1.56;        
 }
 
 /* === ROADMAP SECTION STYLES === */
@@ -306,11 +319,18 @@ content: '';
     padding-top: 100px;
 }
 
+.roadmap>.container { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .roadmap-subtitle {
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .roadmap-subtitle-textblock {
@@ -319,15 +339,14 @@ content: '';
 
 .roadmap-subtitle-textblock-subtitle {
     font-weight: 500;
-    font-size: 46px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 1.27;
     color: #008272;    
 }
 
-.roadmap-content {
-    border-radius: 16px;
+.roadmap-content{    
     width: 100%;
-    height: 730px;
+    height: 530px;
     background: #F1FCF9;
 }
 
@@ -341,7 +360,7 @@ content: '';
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .team-subtitle-textblock {
@@ -350,15 +369,15 @@ content: '';
 
 .team-subtitle-textblock-subtitle {
     font-weight: 500;
-    font-size: 46px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 1.27;
     color: #008272;
 }
 
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     row-gap: 20px;
     align-items: top;
 }
@@ -366,35 +385,35 @@ content: '';
 .team-list-item {    
     position: relative;
     border-radius: 12px;    
-    max-width: calc((100% - 3 * 20px) / 4);
+    max-width: calc((100% - 15px) / 2);
     overflow: hidden;
 }
 
 .team-list-item-info {
     position: absolute;
-    bottom: 0;    
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 20px;
+    padding: 12px;
     justify-content: left;
     align-content: end;
     width: 100%;
-    height: 211px;
+    height: 112px;
     background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0.7) 100%);
 }
 
 .team-list-item-info-subtitle {
     font-weight: 600;
-    font-size: 28px;
-    line-height: 1.21;
+    font-size: 16px;
+    line-height: 1.5;
     color: #FFF;
     margin-bottom: 4px;    
 }
 
 .team-list-item-info-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
+    font-size: 12px;
+    line-height: 1.5;
     color: #FFF;
 }
 
@@ -408,7 +427,7 @@ content: '';
     display: flex;
     gap: 5px;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .contactus-subtitle-textblock {
@@ -417,8 +436,8 @@ content: '';
 
 .contactus-subtitle-textblock-subtitle {
     font-weight: 500;
-    font-size: 46px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 1.27;
     color: #008272;
 }
 
@@ -427,16 +446,17 @@ content: '';
 .footer {
     background: #008272;
     color: #FFF;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;    
 }
 
 .footer-content-block {
     display: flex;
+    flex-direction: column;
 }
 
 .footer-info {
-    margin-right: 500px;
+    margin-bottom: 30px;
 }
 
 .footer-info-logo {
@@ -462,25 +482,27 @@ content: '';
     padding: 4px;
 
 }
+
 .footer-soc-list-item-icon {
     fill: #008272;
 }
 
 .footer-contacts {
-    max-width: 25%;
-}
-.footer-contacts-subtitle {
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 1.3;
-    margin-bottom: 15px;
+    max-width: 100%;
 }
 
+.footer-contacts-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.27;
+    margin-bottom: 15px;
+}
+ 
 .footer-contacts-list {
     display: flex;
     flex-direction:column;
     gap: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-contacts-list-item {
@@ -489,10 +511,11 @@ content: '';
     line-height: 1.5;    
 }
 
+
 .footer-line-container {
     position: relative;
     text-align: center;    
-    margin: 0 0 27px 0;    
+    margin: 0 0 20px 0;    
 }
 
 .footer-line-container::before {
@@ -507,4 +530,331 @@ content: '';
 .footer-copyright {
     font-weight: 400;
     font-size: 15px;
+}
+
+/* === TAB STYLES === */
+
+@media screen and (min-width: 1024px) {
+
+.container {        
+    max-width: 1024px;
+    padding: 0 80px;
+    }
+
+.header-container {    
+    padding: 10px 80px;
+}
+
+.header-logo {
+    margin-right: 20px;
+} 
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-buttons {    
+    margin-left: auto;
+    padding: 0;
+}
+
+.header-buttons-list {
+    gap: 10px;
+}
+
+.header-buttons-item:nth-child(2) {
+    display: flex;    
+}
+
+.header-buttons-item-button {
+    padding: 12px 16px;
+    max-height: 44px;    
+}
+
+.header-mobile-menu-button {
+    display: none;
+}
+
+.intro { 
+    background-image: url(../fd_img/intro-background-tab.svg);
+    background-position: right 80px;
+    max-width: 1024px;    
+}
+
+.intro>.container {
+    padding-top: 90px;    
+}
+.intro-subtitle {    
+    font-size: 54px;    
+    letter-spacing: 0.02em;    
+    max-width: 568px;
+    margin-bottom: 30px;
+}
+.intro-content {
+    max-width: 326px;
+} 
+
+.intro-content-text {
+    font-weight: 400;    
+    margin-bottom: 40px;
+}
+
+.intro-content-list {  
+    width: 326px;
+    padding-bottom: 193px;
+}
+
+.intro-content-list-item {    
+    padding: 10px 20px;        
+    font-size: 14px;
+    line-height: 1.43;    
+}
+
+.benefits {
+    padding-top: 60px;
+}
+
+.benefits-subtitle-textblock-subtitle {
+    font-size: 36px;
+    line-height: 1.3;    
+    margin-bottom: 5px;
+}
+
+.benefits-subtitle-textblock-text {    
+    font-size: 18px;    
+}
+
+.benefits-list {
+    flex-direction: row;    
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.benefits-list-item {    
+    max-width: calc((100% - 20px) / 2);
+}
+
+.roadmap>.container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.roadmap-subtitle {
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.roadmap-subtitle-textblock-subtitle {    
+    font-size: 36px;
+    line-height: 1.3;    
+}
+
+.roadmap-content {
+    border-radius: 16px;    
+    height: 530px;      
+}
+
+.team-subtitle-textblock-subtitle {    
+    font-size: 36px;
+    line-height: 1.3;    
+}
+
+.team-list {    
+    gap: 20px;    
+}
+
+.team-list-item {       
+    max-width: calc((100% - 3*20px) / 4);    
+}
+
+.team-list-item-info {
+    padding: 14px;
+    height: 137px;
+}
+
+.team-list-item-info-subtitle {
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+.contactus-subtitle-textblock-subtitle {
+    font-size: 36px;
+    line-height: 1.3;    
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-content-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-info {
+    margin-right: 300px;
+}
+
+.footer-contacts-subtitle {    
+    font-size: 23px;
+    line-height: 1.3;    
+}
+
+.footer-contacts-list {
+    margin-bottom: 30px;
+}
+
+.footer-line-container {
+    margin: 0 0 27px 0;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+.container {
+    max-width: 1440px;
+    padding: 0 120px;
+}
+
+.header-container {
+    padding: 10px 120px;
+}
+
+.header-logo {
+    margin-right: 40px;
+}
+
+.header-menu-list {
+    gap: 32px;
+}
+
+.intro {    
+    background-image: url(../fd_img/intro-background.svg);    
+    background-position: right 32px;    
+    max-width: 1440px;    
+}
+
+.intro>.container {
+    padding-top: 99px;
+    padding-bottom: 0px;
+    padding-left: 112px;
+    padding-right: 0px;
+}
+
+.intro-subtitle {
+     font-size: 64px; 
+}
+
+.intro-content-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;    
+}
+
+.intro-content-list {
+    width: 363px;
+    padding-bottom: 195px;
+}
+
+.intro-content-list-item {    
+    padding: 12px 20px;    
+    font-size: 16px;
+    line-height: 1.5;   
+}
+
+.benefits {
+    padding-top: 100px;
+}
+
+.benefits-subtitle {
+    margin-bottom: 60px;
+}
+
+.benefits-subtitle-textblock-subtitle {
+     font-size: 46px; 
+}
+
+.benefits-subtitle-textblock-text {    
+    font-size: 20px;    
+}
+
+.benefits-list {    
+    gap: 20px;
+    row-gap: 32px;    
+}
+
+.benefits-list-item {
+    max-width: calc((100% - 2*20px) / 3);
+}
+
+.benefits-list-item-icon {
+    width: 80px;
+    height: 80px; 
+}
+
+.benefits-list-item-textblock-subtitle { 
+    font-size: 24px;
+}
+
+.benefits-list-item-textblock-text {    
+    line-height: 1.6;
+}
+
+.roadmap>.container {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.roadmap-subtitle {
+    margin-bottom: 60px;
+}
+
+.roadmap-subtitle-textblock-subtitle {
+     font-size: 46px;
+}
+
+.roadmap-content {
+    height: 730px;    
+}
+
+.team-subtitle {    
+    margin-bottom: 60px;
+}
+
+.team-subtitle-textblock-subtitle {
+    font-size: 46px;
+}
+
+.team-list-item-info {  
+    padding: 20px;    
+    height: 211px;    
+}
+
+.team-list-item-info-subtitle {    
+    font-size: 28px;
+    line-height: 1.21;    
+}
+
+.team-list-item-info-text { 
+    font-size: 16px;
+    line-height: 1.87;    
+}
+
+.contactus-subtitle {   
+    margin-bottom: 60px;
+}
+
+.contactus-subtitle-textblock-subtitle {
+     font-size: 46px;
+}
+
+.footer-info {
+    margin-right: 500px;
+}
+
 }
