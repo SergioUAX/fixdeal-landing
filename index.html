@@ -14,6 +14,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <!-- IMPORTANT !!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- 
+    replace all ./fd_css/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_css/
+
+    replace all ./fd_img/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_img/
+
+    replace all ./fd_downloads/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_downloads/
+     -->
+
     <link rel="stylesheet" href="./fd_css/fd-styles.css" />
     <link rel="icon" type="image/x-icon" href="./fd_img/favicon.ico" />
   </head>
@@ -434,6 +446,25 @@
                   <p class="team-list-item-info-text">Software Engineer</p>
                 </div>
               </li>
+              <li class="team-list-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./fd_img/team-person8-1x.jpg 1x,
+                      ./fd_img/team-person8-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="img"
+                    src="./fd_img/team-person8-1x.jpg"
+                    alt="old_foto"
+                  />
+                </picture>
+                <div class="team-list-item-info">
+                  <h3 class="team-list-item-info-subtitle">Artem Tiabin</h3>
+                  <p class="team-list-item-info-text">Foto from old site</p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -464,7 +495,58 @@
             </picture>
             <div class="contactus-subtitle-textblock">
               <h2 class="contactus-subtitle-textblock-subtitle">Contact us</h2>
+              <p class="contactus-subtitle-textblock-text">
+                We’d love to hear from you. Thank you for reaching out!
+              </p>
             </div>
+          </div>
+          <div class="contactus-formcontainer">
+            <!-- replace all block to 
+             <?php echo do_shortcode('[contact-form-7 id="0b882c4" title="Contact form_FD"]'); ?>
+              -->
+            <form class="contactus-form">
+              <div class="contactus-form-group">
+                <label class="wpcf7-label" for="name">Your Name</label>
+                <input
+                  class="wpcf7-text"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="contactus-form-group">
+                <label class="wpcf7-label" for="email">Your Email</label>
+                <input
+                  class="wpcf7-email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="contactus-form-group">
+                <label class="wpcf7-label" for="subject">Subject</label>
+                <input
+                  class="wpcf7-text"
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                />
+              </div>
+              <div class="contactus-form-group">
+                <label class="wpcf7-label" for="message">Your Message</label>
+                <textarea
+                  class="wpcf7-textarea"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+              <button class="wpcf7-submit" type="submit" class="submit-button">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </section>

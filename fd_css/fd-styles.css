@@ -41,6 +41,10 @@ img {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* === GENERAL STYLES === */
 body {
     width: 100vw;
@@ -106,10 +110,10 @@ body {
     position: relative;
     padding: 20px 0;
 }
-
+/* 
 .header-menu-item:first-child .header-menu-link {
     color: #008272;
-}
+} */
 
 .header-buttons {
     display: flex;
@@ -134,14 +138,15 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.43;    
-    color: #008272; 
-    background-color: #fff;
+    color: #fff; 
+    background-color:#008272;
     max-height: 36px;
     min-width: 115px;       
 }
 
 .header-buttons-item-button2 {
-    background-color: #008272;
+    border: 1px solid #DCA04E;
+    background-color: #DCA04E;
     color: #fff;
 
 }
@@ -429,6 +434,7 @@ body {
     gap: 5px;
     align-items: center;
     margin-bottom: 40px;
+    max-width: 100%;
 }
 
 .contactus-subtitle-textblock {
@@ -442,13 +448,39 @@ body {
     color: #008272;
 }
 
+.contactus-formcontainer {
+    display: flex;    
+    justify-content: center;
+}
+
+.wpcf7-label {
+
+}
+
+.wpcf7-text {
+
+}
+
+.wpcf7-label {
+
+}
+
+.wpcf7-textarea {
+
+}
+
+.wpcf7-submit {
+
+}
+
 /* === FOOTER STYLES === */
 
 .footer {
     background: #008272;
     color: #FFF;
     padding-top: 30px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;  
+    margin-top: 100px;;  
 }
 
 .footer-content-block {
