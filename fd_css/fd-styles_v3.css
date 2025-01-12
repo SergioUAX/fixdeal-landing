@@ -1680,12 +1680,12 @@ body {
     }
 
     .roadmap-content-postmvp-road {
-        /*justify-content: center;*/
+        /* justify-content: center; */
         margin-top: 10px;
     }
     
     .roadmap-content-postmvp-mainblock {        
-        max-width: 280px;
+        max-width: 280px;  
         margin-right: 105px;
     }
 
@@ -2041,12 +2041,12 @@ body {
     }
 
     .benefits-list {
-        gap: 20px;
+        gap: 10px;
         row-gap: 32px;
     }
 
     .benefits-list-item {
-        max-width: calc((100% - 2*20px) / 3);
+        max-width: calc((100% - 3*10px) / 4);
     }
 
     .benefits-list-item-icon {

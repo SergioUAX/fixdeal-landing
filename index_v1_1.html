@@ -37,6 +37,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <!-- IMPORTANT !!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- 
+    replace all ./fd_css/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_css/
+
+    replace all ./fd_img/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_img/
+
+    replace all ./fd_downloads/ with
+    <?php echo get_stylesheet_directory_uri(); ?>/fd_downloads/
+     -->
 
     <link rel="stylesheet" href="./fd_css/fd-styles.css" />
     <link rel="icon" type="image/x-icon" href="./fd_img/favicon.ico" />
@@ -188,8 +199,8 @@
           <div class="intro-content">
             <p class="intro-content-text">
               Take the first step towards seamless global trading—streamline
-              your processes and pain points in trading with our Smart Commodity
-              Contract!
+              your processes and overcome common challenges with our Commodity
+              Smart Contract!
             </p>
             <ul class="intro-content-list">
               <li class="intro-content-list-item">
@@ -252,8 +263,8 @@
                   Quickly compilation
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  A threefold time advantage in completing contracts thanks to a
-                  specialized algorithm.
+                  Available 24/7, Fixdeal helps you generate and manage
+                  documents anytime, improving operational flow.
                 </p>
               </div>
             </li>
@@ -267,8 +278,9 @@
                   Quickly analysis
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Rapid processing of contract information with transmission of
-                  only essential data.
+                  Eliminate long waits with Fixdeal's rapid document analysis
+                  and nearly instant administrative feedback, improving
+                  decision-making speed.
                 </p>
               </div>
             </li>
@@ -281,8 +293,8 @@
                   Usability for commercial department only
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Specifically designed for the commercial department, top
-                  managers, and shareholders.
+                  Tailored exclusively for commercial departments, boosting
+                  productivity and user experience.
                 </p>
               </div>
             </li>
@@ -320,10 +332,13 @@
                 <use href="./fd_img/icons.svg#icon-benefits-p6"></use>
               </svg>
               <div class="benefits-list-item-textblock">
-                <h3 class="benefits-list-item-textblock-subtitle">Security</h3>
+                <h3 class="benefits-list-item-textblock-subtitle">
+                  Security/electronic signature
+                </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Fixdeal ensures the secure creation, completion, and signing
-                  of contracts.
+                  Fixdeal ensures secure, verifiable document signing through
+                  trusted electronic signatures, safeguarding sensitive
+                  transactions and ensuring authenticity.
                 </p>
               </div>
             </li>
@@ -1377,7 +1392,7 @@
             </div>
           </div>
 
-          <form class="contactus-formcontainer">
+          <div class="contactus-formcontainer">
             <div class="contactus-form-wrapper">
               <label class="contactus-form-input-label" for="user-name"
                 >Your name *</label
@@ -1423,7 +1438,7 @@
               Submit
             </button>
             <div class="g-recaptcha" data-sitekey="my_key"></div>
-          </form>
+          </div>
         </div>
       </section>
     </main>

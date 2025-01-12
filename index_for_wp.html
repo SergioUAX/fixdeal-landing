@@ -23,7 +23,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fixdeal.com/v3/" />
-    <meta property="og:image" content="./fd_img/og-image.jpg" />
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/og-image.jpg" />
     <meta property="og:site_name" content="FixDeal" />
     <link rel="canonical" href="https://fixdeal.com/v3/" />
     <title>Fixdeal - Global trading for everyone</title>
@@ -37,9 +37,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-
-    <link rel="stylesheet" href="./fd_css/fd-styles.css" />
-    <link rel="icon" type="image/x-icon" href="./fd_img/favicon.ico" />
+    
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fd_css/fd-styles_v3.css" />
+    <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/favicon.ico" />
   </head>
   <body>
     <header class="header" id="header">
@@ -48,11 +48,11 @@
           <a class="header-logo" href="#intro">
             <picture>
               <source
-                srcset="./fd_img/logo-1x.png 1x, ./fd_img/logo-2x.png 2x"
+                srcset="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-1x.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-2x.png 2x"
               />
               <img
                 class="header-logo-img"
-                src="./fd_img/logo-1x.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-1x.png"
                 alt="Fixdeal logo"
                 width="82"
                 height="32"
@@ -101,7 +101,7 @@
           id="menu-toggle"
         >
           <svg class="header-mobile-menu-button-icon" width="20" height="20">
-            <use href="./fd_img/icons.svg#icon-mobile-menu"></use>
+            <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
       </div>
@@ -113,11 +113,11 @@
               <a class="header-mobile-menu-logo" href="#intro">
                 <picture>
                   <source
-                    srcset="./fd_img/logo-1x.png 1x, ./fd_img/logo-2x.png 2x"
+                    srcset="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-1x.png 1x, <?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-2x.png 2x"
                   />
                   <img
                     class="header-logo-img"
-                    src="./fd_img/logo-1x.png"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/logo-1x.png"
                     alt="Fixdeal logo"
                     width="82"
                     height="32"
@@ -130,7 +130,7 @@
                   width="20"
                   height="20"
                 >
-                  <use href="./fd_img/icons.svg#icon-mobile-menu-close"></use>
+                  <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-mobile-menu-close"></use>
                 </svg>
               </button>
             </div>
@@ -188,19 +188,19 @@
           <div class="intro-content">
             <p class="intro-content-text">
               Take the first step towards seamless global trading—streamline
-              your processes and pain points in trading with our Smart Commodity
-              Contract!
+              your processes and overcome common challenges with our Commodity
+              Smart Contract!
             </p>
             <ul class="intro-content-list">
               <li class="intro-content-list-item">
                 <svg class="intro-content-list-item-icon">
-                  <use href="./fd_img/icons.svg#icon-intro-performance"></use>
+                  <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-intro-performance"></use>
                 </svg>
                 <p>Optimization for commercial processes</p>
               </li>
               <li class="intro-content-list-item">
                 <svg class="intro-content-list-item-icon">
-                  <use href="./fd_img/icons.svg#icon-intro-backintime"></use>
+                  <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-intro-backintime"></use>
                 </svg>
                 <p>More time for trading and revenue</p>
               </li>
@@ -214,21 +214,21 @@
             <picture>
               <source
                 srcset="
-                  ./fd_img/section-title-1x.png 1x,
-                  ./fd_img/section-title-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-2x.png 2x
                 "
                 media="(min-width: 1440px)"
               />
               <source
                 srcset="
-                  ./fd_img/section-title-mob-1x.png 1x,
-                  ./fd_img/section-title-mob-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-2x.png 2x
                 "
                 media="(max-width: 1439px)"
               />
               <img
                 class="img"
-                src="./fd_img/section-title-1x.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png"
                 alt="Fixdeal section title"
               />
             </picture>
@@ -245,50 +245,47 @@
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p1"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p1"></use>
               </svg>
               <div class="benefits-list-item-textblock">
                 <h3 class="benefits-list-item-textblock-subtitle">
                   Quickly compilation
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  A threefold time advantage in completing contracts thanks to a
-                  specialized algorithm.
+                  A threefold time advantage in completing contracts thanks to a specialized algorithm.
                 </p>
               </div>
             </li>
 
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p2"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p2"></use>
               </svg>
               <div class="benefits-list-item-textblock">
                 <h3 class="benefits-list-item-textblock-subtitle">
                   Quickly analysis
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Rapid processing of contract information with transmission of
-                  only essential data.
+                  Rapid processing of contract information with transmission of only essential data.
                 </p>
               </div>
             </li>
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p3"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p3"></use>
               </svg>
               <div class="benefits-list-item-textblock">
                 <h3 class="benefits-list-item-textblock-subtitle">
                   Usability for commercial department only
                 </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Specifically designed for the commercial department, top
-                  managers, and shareholders.
+                  Specifically designed for the commercial department, top managers, and shareholders.
                 </p>
               </div>
             </li>
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p4"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p4"></use>
               </svg>
               <div class="benefits-list-item-textblock">
                 <h3 class="benefits-list-item-textblock-subtitle">
@@ -302,7 +299,7 @@
             </li>
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p5"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p5"></use>
               </svg>
               <div class="benefits-list-item-textblock">
                 <h3 class="benefits-list-item-textblock-subtitle">
@@ -317,13 +314,44 @@
             </li>
             <li class="benefits-list-item">
               <svg class="benefits-list-item-icon">
-                <use href="./fd_img/icons.svg#icon-benefits-p6"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p6"></use>
               </svg>
               <div class="benefits-list-item-textblock">
-                <h3 class="benefits-list-item-textblock-subtitle">Security</h3>
+                <h3 class="benefits-list-item-textblock-subtitle">
+                  Security
+                </h3>
                 <p class="benefits-list-item-textblock-text">
-                  Fixdeal ensures the secure creation, completion, and signing
-                  of contracts.
+                  Fixdeal ensures the secure creation, completion, and signing of contracts.
+                </p>
+              </div>
+            </li>
+            <li class="benefits-list-item">
+              <svg class="benefits-list-item-icon">
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p5"></use>
+              </svg>
+              <div class="benefits-list-item-textblock">
+                <h3 class="benefits-list-item-textblock-subtitle">
+                  Integration
+                </h3>
+                <p class="benefits-list-item-textblock-text">
+                  Fast, flexible, accessible, and user-friendly integration in just 2 minutes.
+                </p>
+              </div>
+            </li>
+            <li class="benefits-list-item">
+              <svg class="benefits-list-item-icon">
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-benefits-p6"></use>
+              </svg>
+              <div class="benefits-list-item-textblock">
+                <h3 class="benefits-list-item-textblock-subtitle">
+                  Options for Using Fixdeal
+                </h3>
+                <p class="benefits-list-item-textblock-text">
+                  <ul style = "list-style: disc;">
+                    <li>For both parties.</li>
+                    <li>For one party only (some features are limited).</li>
+                    <li>Without using the Fixdeal system (many features are restricted for both parties).</li>
+                  </ul>
                 </p>
               </div>
             </li>
@@ -336,21 +364,21 @@
             <picture>
               <source
                 srcset="
-                  ./fd_img/section-title-1x.png 1x,
-                  ./fd_img/section-title-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-2x.png 2x
                 "
                 media="(min-width: 1440px)"
               />
               <source
                 srcset="
-                  ./fd_img/section-title-mob-1x.png 1x,
-                  ./fd_img/section-title-mob-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-2x.png 2x
                 "
                 media="(max-width: 1439px)"
               />
               <img
                 class="img"
-                src="./fd_img/section-title-1x.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png"
                 alt="Fixdeal section title"
               />
             </picture>
@@ -403,181 +431,181 @@
             </svg>
 
             <svg class="roadmap-content-icon-roadmap-p1">
-              <use href="./fd_img/icons.svg#icon-roadmap-p1"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p1"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p2">
-              <use href="./fd_img/icons.svg#icon-roadmap-p2"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p2"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p3">
-              <use href="./fd_img/icons.svg#icon-roadmap-p3"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p3"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p4">
-              <use href="./fd_img/icons.svg#icon-roadmap-p4"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p4"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p5">
-              <use href="./fd_img/icons.svg#icon-roadmap-p5"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p5"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p6">
-              <use href="./fd_img/icons.svg#icon-roadmap-p6"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p6"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p7">
-              <use href="./fd_img/icons.svg#icon-roadmap-p7"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p7"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p8">
-              <use href="./fd_img/icons.svg#icon-roadmap-p8"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p8"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p9">
-              <use href="./fd_img/icons.svg#icon-roadmap-p9"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p9"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-p10">
-              <use href="./fd_img/icons.svg#icon-roadmap-p10"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-p10"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a1">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a2">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a3">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a4">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a5">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a6">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a7">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a8">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a9">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a10">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a11">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a12">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a13">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a14">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a15">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a16">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
 
             <svg class="roadmap-content-icon-roadmap-a1-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a2-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a3-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a4-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a5-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a6-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a7-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a8-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a9-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a10-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a11-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a12-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a13-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a14-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a15-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a16-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a17-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a18-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a19-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a20-tab">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-down"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-down"></use>
             </svg>
 
             <svg class="roadmap-content-icon-roadmap-a1-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a2-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a3-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a4-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a5-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a6-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a7-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a8-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a9-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-right"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-right"></use>
             </svg>
             <svg class="roadmap-content-icon-roadmap-a10-mob">
-              <use href="./fd_img/icons.svg#icon-roadmap-arrow-left"></use>
+              <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-arrow-left"></use>
             </svg>
 
             <div class="roadmap-content-mvp">
               <div class="roadmap-content-mvp-mainblock">
                 <h3 class="roadmap-content-mvp-mainblock-subtitle">
                   <svg class="roadmap-content-mvp-mainblock-subtitle-icon">
-                    <use href="./fd_img/icons.svg#icon-roadmap-mvp"></use>
+                    <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-mvp"></use>
                   </svg>
                   MVP
                 </h3>
@@ -590,7 +618,7 @@
                 <div class="roadmap-content-mvp-goals">
                   <h3 class="roadmap-content-mvp-goals-subtitle">
                     <svg class="roadmap-content-mvp-goals-subtitle-icon">
-                      <use href="./fd_img/icons.svg#icon-roadmap-flag"></use>
+                      <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-flag"></use>
                     </svg>
                     Goals:
                   </h3>
@@ -612,7 +640,7 @@
               </div>
               <div class="roadmap-content-mvp-start">
                 <svg class="roadmap-content-mvp-start-icon">
-                  <use href="./fd_img/icons.svg#icon-roadmap-start"></use>
+                  <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-start"></use>
                 </svg>
               </div>
 
@@ -641,7 +669,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       User Management
@@ -651,7 +679,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Contract Management
@@ -661,7 +689,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Contract Templates
@@ -671,7 +699,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Testing and Monitoring
@@ -702,7 +730,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Testing and Validation
@@ -712,7 +740,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Gather Feedback
@@ -722,7 +750,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Build Excitement
@@ -732,7 +760,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Early Adopters
@@ -742,7 +770,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Iterate and Improve
@@ -798,7 +826,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Customer Acquisition
@@ -808,7 +836,7 @@
                         class="roadmap-content-mvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Outreach
@@ -821,7 +849,7 @@
               <div class="roadmap-content-launch-mainblock">
                 <h3 class="roadmap-content-launch-mainblock-subtitle">
                   <svg class="roadmap-content-launch-mainblock-subtitle-icon">
-                    <use href="./fd_img/icons.svg#icon-roadmap-launch"></use>
+                    <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-launch"></use>
                   </svg>
                   Launch
                 </h3>
@@ -857,7 +885,7 @@
                         class="roadmap-content-launch-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Launch app on the market
@@ -867,7 +895,7 @@
                         class="roadmap-content-launch-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Begin onboarding users and tracking initial performance
@@ -881,7 +909,7 @@
               <div class="roadmap-content-postmvp-mainblock">
                 <h3 class="roadmap-content-postmvp-mainblock-subtitle">
                   <svg class="roadmap-content-postmvp-mainblock-subtitle-icon">
-                    <use href="./fd_img/icons.svg#icon-roadmap-postmvp"></use>
+                    <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-postmvp"></use>
                   </svg>
                   Post-MVP Releases
                 </h3>
@@ -894,7 +922,7 @@
                 <div class="roadmap-content-postmvp-goals">
                   <h3 class="roadmap-content-postmvp-goals-subtitle">
                     <svg class="roadmap-content-postmvp-goals-subtitle-icon">
-                      <use href="./fd_img/icons.svg#icon-roadmap-flag"></use>
+                      <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-flag"></use>
                     </svg>
                     Goals:
                   </h3>
@@ -939,7 +967,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Enhance Core Functionality and Address Issues
@@ -949,7 +977,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Implement KYC/KYB Processes
@@ -959,7 +987,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Improve Analytical Capabilities
@@ -990,7 +1018,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Where is my product?
@@ -1000,7 +1028,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Where is the money?
@@ -1010,7 +1038,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       What is the quality of goods?
@@ -1020,7 +1048,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       What are the costs of trading mistakes?
@@ -1051,7 +1079,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Automate and enhance processes related to contracts,
@@ -1062,7 +1090,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Blockchain Integration
@@ -1093,7 +1121,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Develop tools to measure and improve the efficiency of
@@ -1104,7 +1132,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       AI Integration
@@ -1135,7 +1163,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Continuous Improvement
@@ -1145,7 +1173,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Market Expansion
@@ -1155,7 +1183,7 @@
                         class="roadmap-content-postmvp-road-block-list-item-icon"
                       >
                         <use
-                          href="./fd_img/icons.svg#icon-roadmap-list-item"
+                          href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-list-item"
                         ></use>
                       </svg>
                       Long-Term Partnerships
@@ -1164,7 +1192,7 @@
                 </div>
                 <div class="roadmap-content-postmvp-road-block">
                   <svg class="roadmap-content-postmvp-keepgoing-icon">
-                    <use href="./fd_img/icons.svg#icon-roadmap-keepgoing"></use>
+                    <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-roadmap-keepgoing"></use>
                   </svg>
                 </div>
               </div>
@@ -1178,21 +1206,21 @@
             <picture>
               <source
                 srcset="
-                  ./fd_img/section-title-1x.png 1x,
-                  ./fd_img/section-title-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-2x.png 2x
                 "
                 media="(min-width: 1440px)"
               />
               <source
                 srcset="
-                  ./fd_img/section-title-mob-1x.png 1x,
-                  ./fd_img/section-title-mob-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-2x.png 2x
                 "
                 media="(max-width: 1439px)"
               />
               <img
                 class="img"
-                src="./fd_img/section-title-1x.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png"
                 alt="Fixdeal section title"
               />
             </picture>
@@ -1207,13 +1235,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person1-1x.jpg 1x,
-                      ./fd_img/team-person1-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person1-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person1-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person1-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person1-1x.jpg"
                     alt="Mikhailo Cherednyk"
                   />
                 </picture>
@@ -1230,13 +1258,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person2-1x.jpg 1x,
-                      ./fd_img/team-person2-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person2-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person2-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person2-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person2-1x.jpg"
                     alt="Kyrylo Ganzha"
                   />
                 </picture>
@@ -1251,13 +1279,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person3-1x.jpg 1x,
-                      ./fd_img/team-person3-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person3-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person3-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person3-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person3-1x.jpg"
                     alt="Yaromir Kozak"
                   />
                 </picture>
@@ -1274,13 +1302,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person5-1x.jpg 1x,
-                      ./fd_img/team-person5-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person5-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person5-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person5-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person5-1x.jpg"
                     alt="Volodymyr Holubenko"
                   />
                 </picture>
@@ -1297,13 +1325,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person6-1x.jpg 1x,
-                      ./fd_img/team-person6-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person6-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person6-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person6-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person6-1x.jpg"
                     alt="Maksim Kornienko"
                   />
                 </picture>
@@ -1323,13 +1351,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./fd_img/team-person7-1x.jpg 1x,
-                      ./fd_img/team-person7-2x.jpg 2x
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person7-1x.jpg 1x,
+                      <?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person7-2x.jpg 2x
                     "
                   />
                   <img
                     class="img"
-                    src="./fd_img/team-person7-1x.jpg"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/team-person7-1x.jpg"
                     alt="Sergio Onoprienko"
                   />
                 </picture>
@@ -1351,21 +1379,21 @@
             <picture>
               <source
                 srcset="
-                  ./fd_img/section-title-1x.png 1x,
-                  ./fd_img/section-title-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-2x.png 2x
                 "
                 media="(min-width: 1440px)"
               />
               <source
                 srcset="
-                  ./fd_img/section-title-mob-1x.png 1x,
-                  ./fd_img/section-title-mob-2x.png 2x
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-1x.png 1x,
+                  <?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-mob-2x.png 2x
                 "
                 media="(max-width: 1439px)"
               />
               <img
                 class="img"
-                src="./fd_img/section-title-1x.png"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/section-title-1x.png"
                 alt="Fixdeal section title"
               />
             </picture>
@@ -1422,7 +1450,7 @@
             <button type="submit" class="contactus-form-button-submit">
               Submit
             </button>
-            <div class="g-recaptcha" data-sitekey="my_key"></div>
+            <!-- <div class="g-recaptcha" data-sitekey="my_key"></div> -->
           </form>
         </div>
       </section>
@@ -1433,7 +1461,7 @@
           <div class="footer-info">
             <a class="footer-info-logo" href="#intro">
               <svg class="footer-info-logo-icon" width="100" height="24">
-                <use href="./fd_img/icons.svg#icon-footer-logo"></use>
+                <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-footer-logo"></use>
               </svg>
             </a>
             <p class="footer-info-text">World Trade Re-imagined</p>
@@ -1445,7 +1473,7 @@
                   target="_blank"
                 >
                   <svg class="footer-soc-list-item-icon" width="17" height="17">
-                    <use href="./fd_img/icons.svg#icon-linkedin"></use>
+                    <use href="<?php echo get_stylesheet_directory_uri(); ?>/fd_img/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -1470,8 +1498,8 @@
         <p class="footer-copyright">© Fixdeal. 2024 All rights reserved</p>
       </div>
     </footer>
-    <script src="./fd_js/mobile-menu.js"></script>
-    <script src="./fd_js/header-menu.js"></script>
-    <script src="./fd_js/sendform-validation.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/fd_js/mobile-menu.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/fd_js/header-menu.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/fd_js/sendform-validation.js"></script>
   </body>
 </html>
