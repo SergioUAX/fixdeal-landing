@@ -2087,6 +2087,14 @@ body {
     padding-bottom: 60px;
     }
 
+    .benefits-list-item:nth-child(5) {
+        order: 8;
+    }
+
+
+
+
+
     .roadmap>.container {
         padding-left: 40px;
         padding-right: 40px;
