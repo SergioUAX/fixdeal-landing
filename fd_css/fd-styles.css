@@ -308,8 +308,7 @@ body {
 }
 
 .header-mobile-menu-buttons-item-button {
-    display: none;
-        /* Move to activate*/
+    display: none;    /* Move to activate*/
     outline: none;
     border: 1px solid #008272;
     border-radius: 8px;
@@ -489,6 +488,7 @@ body {
     font-size: 18px;
     line-height: 1.56;
 }
+
 .benefits-list-item-textblock-text-list {
     list-style: disc;
     font-weight: 400;
@@ -496,6 +496,7 @@ body {
     line-height: 1.56;
     margin-left: 20px;    
 }
+
 .benefits-list-item-textblock-text-list-span {
     font-style: italic;
 }
@@ -982,8 +983,7 @@ body {
 .roadmap-content-postmvp-road-block-state-value2 {
     font-weight: 700;
     font-size: 12px;
-    line-height: 150%;
-    /* margin-left: 8px; */
+    line-height: 150%;    
 }
 
 .roadmap-content-postmvp-road-block-list {
@@ -1588,6 +1588,38 @@ body {
         max-width: calc((100% - 20px) / 2);
     }
 
+    .benefits-list-item:nth-child(1) {
+        order: 1;
+    }
+    
+    .benefits-list-item:nth-child(2) {
+        order: 2;
+    }
+    
+    .benefits-list-item:nth-child(3) {
+        order: 4;
+    }
+
+    .benefits-list-item:nth-child(4) {
+        order: 3;
+    }
+
+    .benefits-list-item:nth-child(5) {
+        order: 5;
+    }
+    
+    .benefits-list-item:nth-child(6) {
+        order: 6;
+    }
+    
+    .benefits-list-item:nth-child(7) {
+        order: 8;
+    }
+
+    .benefits-list-item:nth-child(8) {
+        order: 7;
+    }
+
     .roadmap>.container {
         padding-left: 20px;
         padding-right: 20px;
@@ -1689,8 +1721,7 @@ body {
         border-radius: 16px;
     }
 
-    .roadmap-content-postmvp-road {
-        /*justify-content: center;*/
+    .roadmap-content-postmvp-road {        
         margin-top: 10px;
     }
     
@@ -2057,25 +2088,24 @@ body {
 
     .benefits-list-item {
         max-width: calc((100% - 3*20px) / 4);
-        padding: 20px 19px;   /* my_Ver  */
-
+        padding: 20px 19px;
     }
 
     .benefits-list-item-icon {
         width: 60px;
         height: 60px;
-        margin-bottom: 16px;    /* my_Ver  */
+        margin-bottom: 16px;
     }
 
     .benefits-list-item-textblock-subtitle {
         font-size: 20px;
-        margin-bottom: 16px;    /* my_Ver  */
+        margin-bottom: 16px;
     }
 
     .benefits-list-item-textblock-text {
         line-height: 1.6;
-        font-weight: 400; /* my_Ver  */
-        font-size: 17px; /* my_Ver  */        
+        font-weight: 400;
+        font-size: 17px;         
     }
     
     .benefits-list-item-textblock-text-list {
@@ -2084,16 +2114,40 @@ body {
     }
     
     .benefits-list-item:nth-child(1) {
-    padding-bottom: 60px;
+        padding-bottom: 60px;
+    }
+      
+    .benefits-list-item:nth-child(1) {
+        order: 1;
+    }
+    
+    .benefits-list-item:nth-child(2) {
+        order: 2;
+    }
+    
+    .benefits-list-item:nth-child(3) {
+        order: 3;
+    }
+
+    .benefits-list-item:nth-child(4) {
+        order: 4;
     }
 
     .benefits-list-item:nth-child(5) {
+        order: 6;
+    }
+    
+    .benefits-list-item:nth-child(6) {
+        order: 5;
+    }
+    
+    .benefits-list-item:nth-child(7) {
         order: 8;
     }
 
-
-
-
+    .benefits-list-item:nth-child(8) {
+        order: 7;
+    }
 
     .roadmap>.container {
         padding-left: 40px;
@@ -2163,8 +2217,7 @@ body {
         order: 3;
     }
     
-    
-    .roadmap-content-launch {
+        .roadmap-content-launch {
         padding-left: 30px;
         padding-top: 30px;
         padding-bottom: 45px;;
@@ -2220,13 +2273,9 @@ body {
         margin-bottom: 0;
     }
 
-    /* .roadmap-content-postmvp-road-block2:nth-child(1) {
-        order: 1;
-    }     */
-
     .roadmap-content-postmvp-road-block2 {
-    margin-top: 72px;
-    margin-bottom: 128px;
+        margin-top: 72px;
+        margin-bottom: 128px;
     }
 
     .roadmap-content-postmvp-keepgoing-icon {
